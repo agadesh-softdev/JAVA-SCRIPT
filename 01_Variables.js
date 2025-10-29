@@ -21,7 +21,7 @@ console.log(agadesh);
 
 // ----------------------------------------------------------------------------------------------------------------
 
-// in this we can't re declare the let like type:"let aki=20" but we type:"aki=20"
+// in this we can't re declare the let like type:"let aki=20" but we re assign like type:"aki=20"
 let aki = 10;
 aki = 20;
 console.log(aki);

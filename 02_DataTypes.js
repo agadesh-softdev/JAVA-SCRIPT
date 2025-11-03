@@ -43,7 +43,7 @@
     Skills: {
       HTML: "2 years",
       CSS: "2 years",
-      JAVA: " 2 years",
+      JAVA: "2 years",
     },
   };
   console.log(Person.Skills.JAVA);

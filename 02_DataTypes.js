@@ -3,27 +3,36 @@
 
 {
   // When we store number in a variable it will considered as number datatype
+  var b = 1;
+  console.log(b);
   let a = 1;
   console.log(typeof a);
 }
 {
   // In JS everything in the single or double quotes are considered as String
+  var b = "Agi";
+  console.log(b);
   let a = "Agi";
   console.log(typeof a);
 }
 {
+  // In this the result is yes or no type because it is boolean
+  var b = true;
+  console.log(b);
   let a = true;
   console.log(typeof a);
 }
 {
   //In this it will consider this as a object
+  var b = null;
+  console.log(b);
   let a = null;
   console.log(typeof a);
 }
 {
   // In this we doesn't declare any value inside the variable so it will return Undefined
   let a;
-  console.log(a);
+  console.log(typeof a);
 }
 
 {

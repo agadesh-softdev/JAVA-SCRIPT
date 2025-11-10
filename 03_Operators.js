@@ -10,11 +10,18 @@
   console.log(c);
 }
 
-//MULTIPLICATION
+// SUBSTRACTION
 {
   let a = 30;
   let c = 10;
   console.log(a - c);
+}
+
+// MULTIPLICATION
+{
+  let a = 10;
+  let b = 20;
+  console.log(a * b);
 }
 
 // DIVISION

@@ -24,3 +24,32 @@
     console.log("You entered a invalid day");
   }
 }
+
+{
+  let face = "agi";
+  switch (face) {
+    case "agi":
+      console.log("Match found at 01.Agi");
+      break;
+    case "aga":
+      console.log("Match found at 02.Aga");
+      break;
+    case "agii":
+      console.log("Match found at 03.Agii");
+      break;
+    case "agadesh":
+      console.log("Match found at 04.Agadesh");
+      break;
+    case "agadeshwaran":
+      console.log("Match founf at 05.Agadeshwaran");
+      break;
+    default:
+      console.log("Match not found");
+  }
+}
+
+{
+  let savedinfo = false;
+  let save = savedinfo ? "Welcome Back" : "Login";
+  console.log(save);
+}

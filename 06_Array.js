@@ -12,4 +12,14 @@ console.log(college);
 college[2]="pre final year";
 console.log(college);
 
+//=====================================================================================================================================
+
+college=["first year","second year","third year","fourth year"];
+console.log(college[1]);
+console.log(college[2]);
+college[2]="pre final year";
+console.log(college[2]);
+
+//=====================================================================================================================================
+
 

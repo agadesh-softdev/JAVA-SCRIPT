@@ -6,6 +6,9 @@
   console.log(college.length);
 }
 
+console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
+
+
 // PUSH
 // To add the element in the array                MODIFY THE ORIGINAL ARRAY
 
@@ -15,6 +18,8 @@
   result = college.push(pass);
   console.log(college);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
 
 // POP
 // To remove the element from the array          MODIFY THE ORIGINAL ARRAY
@@ -26,6 +31,8 @@
   console.log(college);
 }
 
+console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
+
 // UNSHIFT
 // To add elements at the beginning of the array    MODIFY THE ORIGINAL ARRAY
 
@@ -35,6 +42,8 @@
   result = college.unshift(new_one);
   console.log(college);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
 
 // SHIFT
 // To remove the first element in the array          MODIFY THE ORIGINAL ARRAY
@@ -48,6 +57,8 @@
 
 //SPLICE
 // to add remove or replace any element from the array
+
+console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];

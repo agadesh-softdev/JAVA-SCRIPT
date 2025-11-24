@@ -12,6 +12,8 @@ console.log("-------------------------------------------------------------------
 // PUSH
 // To add the element in the array                MODIFY THE ORIGINAL ARRAY
 
+console.log("PUSH");
+
 {
   college = ["first year", "second year", "third year", "fourth year"];
   pass = "passed out";
@@ -23,6 +25,8 @@ console.log("-------------------------------------------------------------------
 
 // POP
 // To remove the element from the array          MODIFY THE ORIGINAL ARRAY
+
+console.log("POP");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -36,6 +40,8 @@ console.log("-------------------------------------------------------------------
 // UNSHIFT
 // To add elements at the beginning of the array    MODIFY THE ORIGINAL ARRAY
 
+console.log("UNSHIFT");
+
 {
   college = ["first year", "second year", "third year", "fourth year"];
   new_one = "fresher";
@@ -48,6 +54,8 @@ console.log("-------------------------------------------------------------------
 // SHIFT
 // To remove the first element in the array          MODIFY THE ORIGINAL ARRAY
 
+console.log("PUSH");
+
 {
   college = ["first year", "second year", "third year", "fourth year"];
   new_one = "fresher";
@@ -55,10 +63,12 @@ console.log("-------------------------------------------------------------------
   console.log(college);
 }
 
-//SPLICE
-// to add remove or replace any element from the array
-
 console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
+
+//SPLICE
+// to add remove or replace any element from the array    MODIFY THE ORIGINAL ARRAY
+
+console.log("SPLICE");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -75,3 +85,6 @@ console.log("-------------------------------------------------------------------
     console.log(college);
   }
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------------------------------------------");
+

@@ -157,3 +157,30 @@ console.log("FILL");
 console.log(
   "-------------------------------------------------------------------------------------------------------------------------------------------"
 );
+
+// CONCAT
+// Concatenate the two array into one or what ever it is
+
+console.log("CONCAT");
+
+{
+  let arr = ["1,2,3"];
+  let arra = ["4,5"];
+  let concat = arr.concat(arra);
+  console.log(concat);
+}
+
+console.log(
+  "--------------------------------------------------------------------------------------------------------------------------------------------"
+);
+
+// SLICE
+// It slice or cut the array by using index
+
+console.log("SLICE");
+
+{
+  let arr=[1,2,3,4,5,6,7,8];
+  sliced=arr.slice(0,2);
+  console.log(sliced);
+}

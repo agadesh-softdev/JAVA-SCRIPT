@@ -1,5 +1,7 @@
-// LENGTH
+// 01.LENGTH
 // To find the length of the array
+
+console.log("01.LENGTH");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -13,7 +15,7 @@ console.log(
 // PUSH
 // To add the element in the array                MODIFY THE ORIGINAL ARRAY
 
-console.log("PUSH");
+console.log("02.PUSH");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -29,7 +31,7 @@ console.log(
 // POP
 // To remove the element from the array          MODIFY THE ORIGINAL ARRAY
 
-console.log("POP");
+console.log("03.POP");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -45,7 +47,7 @@ console.log(
 // UNSHIFT
 // To add elements at the beginning of the array    MODIFY THE ORIGINAL ARRAY
 
-console.log("UNSHIFT");
+console.log("04.UNSHIFT");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -61,7 +63,7 @@ console.log(
 // SHIFT
 // To remove the first element in the array          MODIFY THE ORIGINAL ARRAY
 
-console.log("SHIFT");
+console.log("05.SHIFT");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -76,7 +78,7 @@ console.log(
 //SPLICE
 // to add remove or replace any element from the array    MODIFY THE ORIGINAL ARRAY
 
-console.log("SPLICE");
+console.log("06.SPLICE");
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -101,7 +103,7 @@ console.log(
 // SORT
 // To sort a element from a given array
 
-console.log("SORT");
+console.log("07.SORT");
 {
   let a = [
     1, 4, 23, 67, 2, 6, 56, 98, 34, 56, 87, 334, 556, 2, 76, 9, 44, 345, 12, 6,
@@ -131,7 +133,7 @@ console.log(
 // REVERSE
 // Used to reverse the elements
 
-console.log("REVERSE");
+console.log("08.REVERSE");
 
 {
   let element = ["agadesh", "dev", "aarthi"];
@@ -146,7 +148,7 @@ console.log(
 // FILL
 // Used to fill the element using index
 
-console.log("FILL");
+console.log("09.FILL");
 
 {
   let box = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -161,7 +163,7 @@ console.log(
 // CONCAT
 // Concatenate the two array into one or what ever it is
 
-console.log("CONCAT");
+console.log("10.CONCAT");
 
 {
   let arr = ["1,2,3"];
@@ -177,10 +179,14 @@ console.log(
 // SLICE
 // It slice or cut the array by using index
 
-console.log("SLICE");
+console.log("11.SLICE");
 
 {
-  let arr=[1,2,3,4,5,6,7,8];
-  sliced=arr.slice(0,2);
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+  sliced = arr.slice(0, 2);
   console.log(sliced);
 }
+
+console.log(
+  "---------------------------------------------------------------------------------------------------------------------------------------------"
+);

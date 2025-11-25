@@ -120,7 +120,7 @@ console.log("SORT");
     { name: "agadesh", age: 20 },
     { name: "dev", age: 19 },
   ];
-  let sorted_age = employee.sort((a, b) => a.age - b.age);
+  let sorted_age = employee.sort((a, b) => a.age - b.age); // this will sort by age 
   console.log(sorted_age);
 }
 

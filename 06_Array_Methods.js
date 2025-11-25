@@ -171,6 +171,12 @@ console.log("10.CONCAT");
   let concat = arr.concat(arra);
   console.log(concat);
 }
+{
+  let one = "Hello";
+  let two = "World";
+  let three = one + " " + two;
+  console.log(three);
+}
 
 console.log(
   "--------------------------------------------------------------------------------------------------------------------------------------------"

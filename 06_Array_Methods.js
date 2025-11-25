@@ -120,10 +120,40 @@ console.log("SORT");
     { name: "agadesh", age: 20 },
     { name: "dev", age: 19 },
   ];
-  let sorted_age = employee.sort((a, b) => a.age - b.age); // this will sort by age 
+  let sorted_age = employee.sort((a, b) => a.age - b.age); // this will sort by age
   console.log(sorted_age);
 }
 
 console.log(
   "--------------------------------------------------------------------------------------------------------------------------------------------"
+);
+
+// REVERSE
+// Used to reverse the elements
+
+console.log("REVERSE");
+
+{
+  let element = ["agadesh", "dev", "aarthi"];
+  reverse_element = element.reverse();
+  console.log(reverse_element);
+}
+
+console.log(
+  "--------------------------------------------------------------------------------------------------------------------------------------------"
+);
+
+// FILL
+// Used to fill the element using index
+
+console.log("FILL");
+
+{
+  let box = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let xbox = box.fill(0, 4, 7);
+  console.log(xbox);
+}
+
+console.log(
+  "-------------------------------------------------------------------------------------------------------------------------------------------"
 );

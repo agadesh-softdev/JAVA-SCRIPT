@@ -12,7 +12,7 @@ console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// PUSH
+// 02.PUSH
 // To add the element in the array                MODIFY THE ORIGINAL ARRAY
 
 console.log("02.PUSH");
@@ -28,7 +28,7 @@ console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// POP
+// 03.POP
 // To remove the element from the array          MODIFY THE ORIGINAL ARRAY
 
 console.log("03.POP");
@@ -44,7 +44,7 @@ console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// UNSHIFT
+// 04.UNSHIFT
 // To add elements at the beginning of the array    MODIFY THE ORIGINAL ARRAY
 
 console.log("04.UNSHIFT");
@@ -60,7 +60,7 @@ console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// SHIFT
+// 05.SHIFT
 // To remove the first element in the array          MODIFY THE ORIGINAL ARRAY
 
 console.log("05.SHIFT");
@@ -75,7 +75,7 @@ console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-//SPLICE
+// 06.SPLICE
 // to add remove or replace any element from the array    MODIFY THE ORIGINAL ARRAY
 
 console.log("06.SPLICE");
@@ -100,7 +100,7 @@ console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// SORT
+// 07.SORT
 // To sort a element from a given array
 
 console.log("07.SORT");
@@ -130,7 +130,7 @@ console.log(
   "--------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// REVERSE
+// 08.REVERSE
 // Used to reverse the elements
 
 console.log("08.REVERSE");
@@ -145,7 +145,7 @@ console.log(
   "--------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// FILL
+// 09.FILL
 // Used to fill the element using index
 
 console.log("09.FILL");
@@ -160,7 +160,7 @@ console.log(
   "-------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// CONCAT
+// 10.CONCAT
 // Concatenate the two array into one or what ever it is
 
 console.log("10.CONCAT");
@@ -176,7 +176,7 @@ console.log(
   "--------------------------------------------------------------------------------------------------------------------------------------------"
 );
 
-// SLICE
+// 11.SLICE
 // It slice or cut the array by using index
 
 console.log("11.SLICE");
@@ -189,4 +189,19 @@ console.log("11.SLICE");
 
 console.log(
   "---------------------------------------------------------------------------------------------------------------------------------------------"
+);
+
+// 12.COPYWITHIN
+// It copy and paste the element by using index in the array
+
+console.log("12.COPYWITHIN");
+
+{
+  let name = ["agadesh", "aga", "agi", "aki", "hello"];
+  let res = name.copyWithin(0, 2);
+  console.log(res);
+}
+
+console.log(
+  "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );

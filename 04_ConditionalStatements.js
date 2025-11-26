@@ -1,6 +1,8 @@
 // CONDITIONAL STATEMENTS
 // 1.if 2.else 3.else if 4.ternary statement 5.switch statement
 
+// IF
+
 {
   let agadesh = 10;
   if (agadesh % 2 == 0) {
@@ -10,6 +12,11 @@
   }
 }
 
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);
+
+// ELSE IF
 {
   let day = "sunday";
   if (day == "sunday" || day == "saturday") {
@@ -24,6 +31,12 @@
     console.log("You entered a invalid day");
   }
 }
+
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);
+
+// SWITCH CASE
 
 {
   let face = "agi";
@@ -48,8 +61,16 @@
   }
 }
 
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);
+
 {
   let savedinfo = false;
   let save = savedinfo ? "Welcome Back" : "Login";
   console.log(save);
 }
+
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);

@@ -8,6 +8,9 @@
   let a = 1;
   console.log(typeof a);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------");
+
 {
   // In JS everything in the single or double quotes are considered as String
   var b = "Agi";
@@ -15,6 +18,9 @@
   let a = "Agi";
   console.log(typeof a);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------");
+
 {
   // In this the result is yes or no type because it is boolean
   var b = true;
@@ -22,6 +28,9 @@
   let a = true;
   console.log(typeof a);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------");
+
 {
   //In this it will consider this as a object
   var b = null;
@@ -29,11 +38,16 @@
   let a = null;
   console.log(typeof a);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------");
+
 {
   // In this we doesn't declare any value inside the variable so it will return Undefined
   let a;
   console.log(typeof a);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------");
 
 {
   let Person = {
@@ -48,3 +62,5 @@
   };
   console.log(Person.Skills.JAVA);
 }
+
+console.log("-----------------------------------------------------------------------------------------------------------");

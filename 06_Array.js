@@ -3,23 +3,33 @@ console.log(buildings);
 buildings[1] = "airport";
 console.log(buildings);
 
-//=====================================================================================================================================
-
-college=["first year","second year","third year","fourth year"];
-console.log(college);
-college[3]="final year";
-console.log(college);
-college[2]="pre final year";
-console.log(college);
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);
 
 //=====================================================================================================================================
 
-college=["first year","second year","third year","fourth year"];
+college = ["first year", "second year", "third year", "fourth year"];
+console.log(college);
+college[3] = "final year";
+console.log(college);
+college[2] = "pre final year";
+console.log(college);
+
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);
+
+//=====================================================================================================================================
+
+college = ["first year", "second year", "third year", "fourth year"];
 console.log(college[1]);
 console.log(college[2]);
-college[2]="pre final year";
+college[2] = "pre final year";
 console.log(college[2]);
 
+console.log(
+  "-----------------------------------------------------------------------------------------------------------"
+);
+
 //=====================================================================================================================================
-
-

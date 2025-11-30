@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Manipulation</title>
     <link rel="icon" type="image" href="./ASSETS/fav_icon.png" />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1 id="name">Agadeshwaran R</h1>
+    <p>Renamed by using id (document.getElemetById)</p>
+    <script>
+      // BY USING ID AND CHANGING COLOR
+      let names = document.getElementById("name");
+      names.textContent = "Agiii"; // to manipulate the data
+      names.style.color = "green"; // change the color of the text
+      names.style.backgroundcolor = "red";
+    </script>
+    <hr />
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <h1 class="changed">Agiii 1</h1>
+    <h1 class="changed">Agiii 2</h1>
+    <h1 class="changed">Agiii 3</h1>
+    <p>Renamed by using class (document.getElemetByClass)</p>
+    <script>
+      // BY USING CLASS
+      let change = document.getElementsByClassName("changed");
+      for (i = 0; i < change.length; i++) {
+        change[i].textContent = "Agadeshwaran R" + " " + (i + 1);
+      }
+    </script>
+    <hr />
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <ol>
+      <li>Hii...!!!</li>
+      <li>Hii...!!!</li>
+      <li>Hii...!!!</li>
+    </ol>
+    <p>This is changed by using tag name</p>
+    <script>
+      // BY USING TAG
+      let aga = document.getElementsByTagName("li");
+      for (i = 0; i < aga.length; i++) {
+        aga[i].textContent = "Helloooooo...!!!";
+      }
+    </script>
+    <hr />
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <script>
+      // CREATING NEW ELEMENTS
+      let newone = document.createElement("h6");
+      newone.textContent = "Hiii This is agii";
+      document.body.appendChild(newone);
+    </script>
+    <hr />
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <h1>AGIIIIII</h1>
+    <h1 id="elements">AGIIIIII</h1>
+    <script>
+      let agadesh = document.getElementById("elements");
+      agadesh.remove();
+    </script>
+    <hr />
+  </body>
 </html>

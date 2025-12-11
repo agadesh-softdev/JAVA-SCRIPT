@@ -29,3 +29,5 @@ console.log(aki);
 var aka = 20;
 var aka = 30;
 console.log(aka);
+
+// In var both re assign and re declare are allowed and that's global scope because of this it can be hoisted

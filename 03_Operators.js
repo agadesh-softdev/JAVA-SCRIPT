@@ -125,9 +125,9 @@ console.log(
   let a = false;
   let b = true;
   if (a || b) {
-    console.log("both are true");
+    console.log("It has one true so i accept it");
   } else {
-    console.log("both are not true");
+    console.log("There is not a single true so i reject it");
   }
 }
 {

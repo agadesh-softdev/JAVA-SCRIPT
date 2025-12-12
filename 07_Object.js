@@ -29,6 +29,7 @@ console.log(
   console.log(deg);
   console.log(deg[agiupdate]);
   console.log(deg.devupdate); //undefined
+  console.log(deg[devupdate]);
   // because it's stored in a variable and then its called by . in case it's called by a[] then it'll be worked
 }
 

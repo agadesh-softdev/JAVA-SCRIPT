@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <style>
+    body {
+      margin-top: 20px;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      overflow-y: hidden;
+    }
+    hr {
+      width: 100%;
+    }
+    button {
+      width: 100px;
+      margin-bottom: 50px;
+      margin-left: 45%;
+      margin-top: 40px;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+    input {
+      width: 200px;
+      margin-left: 41.5%;
+    }
+  </style>
+  <body>
+    <!--ONCLICK-->
+    <button onclick="alert('Button Clicked')">Hover me</button>
+    <hr />
+    <!--ONMOUSE OVER-->
+    <button onmouseover="alert('Button Clicked')">Hover me</button>
+    <hr />
+    <!--ON KEYDOWN-->
+    <input
+      onkeydown="console.log('Key Down');
+    "
+      type="text"
+    />
+    <hr />
+    <!--SUBMIT-->
+    <form onsubmit="alert('Form Submitted')">
+      <input type="text" />
+      <button class="btn" type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>

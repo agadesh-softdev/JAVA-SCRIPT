@@ -11,7 +11,6 @@
       display: flex;
       height: 100vh;
       flex-direction: column;
-      overflow-y: hidden;
     }
     hr {
       width: 100%;
@@ -34,9 +33,11 @@
     <!--ONCLICK-->
     <button onclick="alert('Button Clicked')">Hover me</button>
     <hr />
+
     <!--ONMOUSE OVER-->
     <button onmouseover="alert('Button Clicked')">Hover me</button>
     <hr />
+
     <!--ON KEYDOWN-->
     <input
       onkeydown="console.log('Key Down');
@@ -44,10 +45,53 @@
       type="text"
     />
     <hr />
+
     <!--SUBMIT-->
     <form onsubmit="alert('Form Submitted')">
       <input type="text" />
       <button class="btn" type="submit">SUBMIT</button>
     </form>
+    <hr />
+
+    <!--EVENT LISTENER CLICK-->
+    <button id="click">Click Me</button>
+    <script>
+      let aga = document.querySelector("#click");
+      aga.addEventListener("click", () => {
+        alert("Form submitted");
+      });
+    </script>
+    <hr />
+
+    <!--EVENT LISTENER ONMOUSE OVER-->
+    <button id="mouseover">HOVER ME</button>
+    <script>
+      let jan = document.querySelector("#mouseover");
+      jan.addEventListener("mouseover", () => {
+        alert("Form submitted");
+      });
+    </script>
+
+    <!--EVENT LISTENER KEYDOWN-->
+    <input type="text" id="dec" />
+    <script>
+      let hee = document.querySelector("#dec");
+      hee.addEventListener("keydown", () => {
+        console.log("Key down");
+      });
+    </script>
+
+    <!--EVENT LISTENER SUBMIT-->
+    <form id="fes">
+      <input type="text" />
+      <button>SUBMIT</button>
+    </form>
+    <script>
+      let ads = document.querySelector("#fes");
+      ads.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Form Submitted");
+      });
+    </script>
   </body>
 </html>

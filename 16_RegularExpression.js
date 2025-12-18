@@ -53,6 +53,18 @@
 // *
 
 {
+  let jan = /[0-9]*[A-B]/; // 0-9 may false or true but A-B must me true if A-B true then its true
+  let text = "9A";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /[a-z]{2}[4-8]{2}/; // number of repetation is 2
+  let text = "agadesh45";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
   let jan = /agadesh/;
   let text = "agadesh";
   let result = jan.test(text);

@@ -109,3 +109,46 @@
   let result = jan.test(text);
   console.log(result);
 }
+{
+  let jan = /[\d]/; // numbers
+  let text = "0";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /[\s]/; // space
+  let text = " ";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /[\w]/; // word includes a-z ,0-9 ,_
+  let text = "agadesh";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /\bagadesh\b/; // only check agadesh in this the second one caughts
+  let text = "agadeshwaran agadesh";
+  let result = jan.test(text);
+  console.log(result);
+}
+
+//PRACTICE
+
+// PHONE NUMBER LOGIC
+
+{
+  let regex = /[\s\+\d{2}\s\d{10}]/;
+  let text = "agadeshwaran +91 6381458174";
+  let result = regex.test(text);
+  console.log(result);
+}
+
+// EMAIL
+{
+  let regex = /^[\w.]+@[a-zA-z0-9-]+.[a-zA-Z]{0,5}$/;
+  let mail = "agadesh.softdev@gmail.com";
+  let result = regex.test(mail);
+  console.log(result);
+}

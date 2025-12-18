@@ -65,6 +65,45 @@
   console.log(result);
 }
 {
+  let jan = /[0-9]{0,}/; // min max in this max not set so its infinity
+  let text = "000000000000000000000011112222228888333333";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /^[a-b]/; // start
+  let text = "agadesh";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /[a-z]$/; // end
+  let text = "agadesh";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /\$$/; // if end is also a $ use forward slash
+  let text = "agadesh$";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
+  let jan = /agadesh/;
+  let text = "agadesh";
+  let result = jan.test(text);
+  console.log(result);
+}
+
+// OR
+
+{
+  let jan = /^[a-z]|^[0-9]/; // OR its start with either a -z or 0-9
+  let text = "agadesh";
+  let result = jan.test(text);
+  console.log(result);
+}
+{
   let jan = /agadesh/;
   let text = "agadesh";
   let result = jan.test(text);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIME INTERVAL</title>
+  </head>
+  <body>
+    <h1 id="name">AGADESHWARAN R</h1>
+    <button id="btn">Stop Changing</button>
+    <h1 id="time">0</h1>
+    <script>
+      let agadesh = document.querySelector("#name");
+      let btnvar = document.querySelector("#btn");
+      let time = document.querySelector("#time");
+
+      let timeout = setInterval(() => {
+        agadesh.style = "color:red";
+      }, 5000);
+
+      btnvar.addEventListener("click", () => {
+        clearTimeout(timeout);
+      });
+
+      let count = 1;
+      let out = setInterval(() => {
+        time.innerHTML = count;
+        if (count == 5) {
+          clearInterval(out);
+        }
+        count++;
+      }, 1000);
+    </script>
+  </body>
+</html>

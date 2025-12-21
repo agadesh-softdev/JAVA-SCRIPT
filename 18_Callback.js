@@ -33,3 +33,24 @@
   aga("Processing Order", timeout);
 }
 
+{
+  let username = "admin";
+  let password = "1234";
+
+  function login(callback) {
+    console.log("Validating User");
+    if (username == "admin" && password == "1234") {
+      setTimeout(() => {
+        callback("Login Successfull");
+      }, 2000);
+    } else {
+      setTimeout(() => {
+        callback("Invalid Credentials");
+      }, 2000);
+    }
+  }
+  function show(message) {
+    console.log(message);
+  }
+  login(show);
+}

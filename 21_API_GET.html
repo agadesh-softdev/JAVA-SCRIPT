@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API GET</title>
+    <link rel="icon" type="image" href="./ASSETS/fav_icon.png" />
+  </head>
+  <style>
+    body {
+      background-color: wheat;
+    }
+    .one {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      height: 40px;
+      width: 100px;
+      border: 1px solid blue;
+      font-weight: 700;
+      border-radius: 20px;
+    }
+    button:hover {
+      opacity: 0.7;
+      color: black;
+    }
+    button:active {
+      scale: 0.8;
+      color: red;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <div class="one">
+      <button id="btn">Fetch Data</button>
+    </div>
+    <div class="boss">
+      <div class="error" id="myerror"></div>
+      <br />
+      <br />
+      <div class="cards" id="mycards"></div>
+    </div>
+    <script>
+      let button = document.getElementById("btn");
+      button.addEventListener("click", () => {
+        fetch("https://694925e51282f890d2d55a3a.mockapi.io/user", {
+          method: "GET",
+          headers: { "content-type": "application/json" },
+        })
+          .then((res) => {
+            if (res.ok) {
+              return res.json();
+            }
+            throw new Error("Error Occured when fetching details");
+          })
+          .then((data) => {
+            let mycards = document.getElementById("mycards");
+            myerror.textContent = "";
+            mycards.innerHTML = "";
+            data.forEach((info) => {
+              let card = `
+                  <div class="card">
+                  <img src="${info.image}" alt="${info.name}" />
+                  <h3>${info.name}</h3>
+                  <p>${info.email}</p>
+                  <p>${info.phonenumber}</p>
+                  </div>
+              `;
+              mycards.innerHTML += card;
+            });
+          })
+          .catch((error) => {
+            document.getElementById("myerror").textContent = error.message;
+          });
+      });
+    </script>
+  </body>
+</html>

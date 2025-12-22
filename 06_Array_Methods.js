@@ -215,3 +215,35 @@ console.log("12.COPYWITHIN");
 console.log(
   "-----------------------------------------------------------------------------------------------------------------------------------------------"
 );
+
+// It checks the element is in the array or not
+
+//let res = fruits.includes("element to search", starting index);
+
+console.log("13.INCLUDES");
+
+{
+  let fruits = ["apple", "banana", "orange", "pineapple", "grapes", "orange"];
+  let res = fruits.includes("orange", 3);
+  console.log(res);
+}
+
+console.log(
+  "-----------------------------------------------------------------------------------------------------------------------------------------------"
+);
+
+console.log("14.INDEXOF");
+
+{
+  let fruits = ["apple", "banana", "orange", "pineapple", "grapes", "orange"];
+  let res = fruits.indexOf("apple");
+  if (res !== -1) {
+    console.log("In stock");
+  } else {
+    console.log("Out of stock");
+  }
+}
+
+console.log(
+  "-----------------------------------------------------------------------------------------------------------------------------------------------"
+);

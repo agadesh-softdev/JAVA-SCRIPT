@@ -79,6 +79,7 @@ console.log(
 // to add remove or replace any element from the array    MODIFY THE ORIGINAL ARRAY
 
 console.log("06.SPLICE");
+//    array.splice(startIndex, deleteCount, item1, item2, ...)
 
 {
   college = ["first year", "second year", "third year", "fourth year"];
@@ -90,7 +91,6 @@ console.log("06.SPLICE");
 {
   {
     college = ["first year", "second year", "third year", "fourth year"];
-    new_one = "fresher";
     result = college.splice(3, 0, "about to final year"); // add about to final year
     console.log(college);
   }

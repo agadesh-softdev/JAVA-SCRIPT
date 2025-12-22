@@ -148,6 +148,8 @@ console.log(
 // 09.FILL
 // Used to fill the element using index
 
+// xbox=box.fill(element to fill,"start index","stop index")
+
 console.log("09.FILL");
 
 {
@@ -172,9 +174,9 @@ console.log("10.CONCAT");
   console.log(concat);
 }
 {
-  let one = "Hello";
+  let one = "Hello ";
   let two = "World";
-  let three = one + " " + two;
+  let three = one.concat(two);
   console.log(three);
 }
 
@@ -200,11 +202,13 @@ console.log(
 // 12.COPYWITHIN
 // It copy and paste the element by using index in the array
 
+// let res=name.copywithin("paste by the index","start to copy by the index","end to copy by index")
+
 console.log("12.COPYWITHIN");
 
 {
-  let name = ["agadesh", "aga", "agi", "aki", "hello"];
-  let res = name.copyWithin(0, 2);
+  let name = ["agadesh", "aga", "agi", "aki", "hello", "one", "two", "three"];
+  let res = name.copyWithin(0, 4, 7);
   console.log(res);
 }
 

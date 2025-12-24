@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API POST</title>
+    <link rel="icon" type="image" href="./ASSETS/fav_icon.png" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: aquamarine;
+      }
+      .boss {
+        width: 500px;
+        margin: auto;
+        background-color: bisque;
+        margin-top: 50px;
+        padding: 40px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+      }
+      input {
+        border-radius: 8px;
+        height: 30px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      button {
+        margin-top: 20px;
+        width: 300px;
+        margin: auto;
+        height: 50px;
+        border-radius: 20px;
+        background-color: blue;
+        color: white;
+        font-size: larger;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      #topic {
+        text-align: center;
+        font-size: larger;
+      }
+      label {
+        font-size: larger;
+        font-weight: 700;
+      }
+      button:hover {
+        opacity: 0.7;
+      }
+      button:active {
+        scale: 0.98;
+      }
+      .output {
+        border-radius: 10px;
+        width: 400px;
+        height: 35px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boss">
+      <form id="forms">
+        <h3 id="topic">API POST PRATICE</h3>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" />
+        <button id="button" type="submit">Create task</button>
+      </form>
+      <div class="output" id="output" style="display: none"></div>
+    </div>
+
+    <script>
+      let button = document.getElementById("forms");
+      button.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+
+        const newtask = {
+          name: name,
+          email: email,
+          phone: phone,
+        };
+
+        fetch("https://694925e51282f890d2d55a3a.mockapi.io/user", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(newtask),
+        })
+          .then((res) => {
+            if (res.ok) {
+              return res.json();
+            }
+            throw new Error("Unable to load task");
+          })
+          .then((res) => {
+            let resmessage = document.getElementById("output");
+            resmessage.textContent = "Task updated successfully";
+            resmessage.style.display = "flex";
+            resmessage.style.backgroundColor = "lightgreen";
+            resmessage.style.color = "green";
+          })
+          .catch((error) => {
+            let resmessage = document.getElementById("output");
+            resmessage.textContent = "Failed to update task";
+            resmessage.style.display = "flex";
+            resmessage.style.color = "red";
+          });
+      });
+    </script>
+  </body>
+</html>

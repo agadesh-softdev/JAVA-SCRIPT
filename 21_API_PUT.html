@@ -120,11 +120,60 @@
           })
           .then((task) => {
             tasks = task;
+            renderTask();
           });
       }
-      function renderTask(){
-        
+      function renderTask() {
+        cardContainer.innerHTML = tasks
+          .map(
+            (task) => `<div class="card">
+            <img src="${task.image}" alt="${task.name}">
+            <h3>${task.name}</h3>
+            <p><strong>Email:</strong> ${task.email}</p>
+            <p><strong>Phone:</strong> ${task.phone}</p>
+            <button onclick="editTask('${task.id}')">Update</button>
+          </div>`
+          )
+          .join("");
       }
+      function editTask(id) {
+        let aga = tasks.find((task) => task.id === id);
+        currentTaskId = id;
+        name.value = aga.name;
+        email.value = aga.email;
+        phone.value = aga.phone;
+        updateForm.style.display = "block";
+      }
+      editTaskForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!currentTaskId) return;
+        let updatedTask = {
+          name: name.value,
+          email: email.value,
+          phone: phone.value,
+        };
+        fetch(
+          `https://694925e51282f890d2d55a3a.mockapi.io/user/${currentTaskId}`,
+          {
+            method: "PUT",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(updatedTask),
+          }
+        )
+          .then((res) => {
+            if (res.ok) {
+              return res.json();
+            }
+          })
+          .then((data) => {
+            tasks = tasks.map((task) => (task.id === data.id ? data : task));
+            renderTask();
+            updateForm.style.display = "none";
+          })
+          .catch((error) => {
+            console.log("error in fetching data", error);
+          });
+      });
       fetchTasks();
     </script>
   </body>

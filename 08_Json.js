@@ -9,6 +9,6 @@ let info = {
 
 const string_info = JSON.stringify(info);
 console.log(string_info);
-
+//------------------------------------------------
 const parse_info = JSON.parse(string_info);
 console.log(parse_info);

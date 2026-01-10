@@ -144,7 +144,6 @@
       let isEditing = false;
       let currentTaskId = null;
       const serverUrl = "https://68ad07cdb996fea1c08b65ec.mockapi.io/crud";
-
       function fetchTasks() {
         fetch(serverUrl)
           .then((res) => {
@@ -170,7 +169,6 @@
           taskTableBody.innerHTML = tasks
             .map((task) => {
               return `
-              
           <tr>
             <td>${task.id}</td>
             <td>${task.name}</td>
@@ -188,7 +186,6 @@
             .join("");
         }
       }
-
       taskForm.addEventListener("submit", (event) => {
         event.preventDefault();
         const name = document.getElementById("name").value;
@@ -238,7 +235,6 @@
             });
         }
       });
-
       function editTask(id) {
         let data = tasks.find((t) => t.id === id);
         if (!data) return;
@@ -249,7 +245,6 @@
         currentTaskId = id;
         submitButton.textContent = "Edit Task";
       }
-
       function deleteTask(id) {
         fetch(`${serverUrl}/${id}`, {
           method: "DELETE",
@@ -266,14 +261,12 @@
             console.log("Failed To delete Task", error);
           });
       }
-
       function resetForm() {
         isEditing = false;
         currentTaskId = null;
         taskForm.reset();
         submitButton.textContent = "Add Task";
       }
-
       fetchTasks();
     </script>
   </body>

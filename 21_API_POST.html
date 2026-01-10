@@ -83,12 +83,10 @@
       </form>
       <div class="output" id="output" style="display: none"></div>
     </div>
-
     <script>
       let button = document.getElementById("forms");
       button.addEventListener("submit", (event) => {
         event.preventDefault();
-
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
@@ -98,7 +96,6 @@
           email: email,
           phone: phone,
         };
-
         fetch("https://694925e51282f890d2d55a3a.mockapi.io/user", {
           method: "POST",
           headers: { "content-type": "application/json" },

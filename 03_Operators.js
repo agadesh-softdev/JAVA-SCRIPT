@@ -121,6 +121,7 @@ console.log(
     console.log("both are not true");
   }
 }
+
 {
   let a = false;
   let b = true;
@@ -130,6 +131,7 @@ console.log(
     console.log("There is not a single true so i reject it");
   }
 }
+
 {
   let a = true;
   console.log(!a);
